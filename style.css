@@ -168,7 +168,7 @@ a:hover {
     font-size: 11px;
     text-align: center;
     color: hsl(215, 51%, 70%);
-    align-self: flex-end;
+    margin-top: 15px;
 }
 
 .attribution a {
