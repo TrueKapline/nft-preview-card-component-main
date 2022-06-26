@@ -14,8 +14,7 @@ body {
     flex-direction: column;
 }
 
-image, h1, h2, p {
-    padding: 0;
+* {
     margin: 0;
 }
 
@@ -52,12 +51,14 @@ image, h1, h2, p {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 500ms cubic-bezier(.5,0,0,1);
+    transition: 500ms cubic-bezier(.5,0,0,1);
+    transition-property: opacity;
     opacity: 0;
 }
 
 .image_overlay:hover {
     opacity: 1;
+    cursor: pointer;
 }
 
 h1 {
@@ -82,6 +83,7 @@ p {
 .description_text {
     font-size: 18px;
     font-weight: 300;
+    line-height: 146%;
     margin-top: 16px;
     max-width: 302px;
 }
@@ -151,6 +153,7 @@ hr {
     margin-left: 17px;
     font-size: 16px;
     font-weight: 400;
+    letter-spacing: 0.01em;
     max-width: 302px;
 }
 
@@ -165,7 +168,9 @@ a:hover {
 }
 
 .attribution {
-    font-size: 11px;
+    position: absolute;
+    bottom: 15px;
+    font-size: 15px;
     text-align: center;
     color: hsl(215, 51%, 70%);
     margin-top: 15px;
